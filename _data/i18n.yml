@@ -1,0 +1,49 @@
+# 多语言配置文件
+en:
+  site:
+    title: "Guoqiang Yan"
+    description: "Ph.D. Candidate in Public Management"
+  nav:
+    home: "Home"
+    publications: "Publications"  
+    showcase: "Showcase"
+    language: "中文"
+  profile:
+    education: "Education"
+    experience: "Experience"  
+    awards: "Awards"
+    skills: "Research Skills"
+    download_cv: "Download CV"
+  publications:
+    title: "Publications"
+    selected: "Selected Publications"
+    all: "All Publications"
+    abstract: "Abstract"
+    links: "Links"
+  footer:
+    rights: "All rights reserved"
+
+zh:
+  site:
+    title: "颜国强"
+    description: "公共管理学博士研究生"
+  nav:
+    home: "首页"
+    publications: "学术成果"
+    showcase: "项目展示" 
+    language: "English"
+  profile:
+    education: "教育背景"
+    experience: "工作经历"
+    awards: "获奖情况"  
+    skills: "研究技能"
+    download_cv: "下载简历"
+  publications:
+    title: "学术成果"
+    selected: "精选论文"
+    all: "全部论文"
+    abstract: "摘要"
+    links: "链接"
+  footer:
+    rights: "版权所有"
+

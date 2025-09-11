@@ -1,18 +1,18 @@
-primary_name: "Your Name"
-secondary_name: ""
-navbar_name: "Your Name"
+primary_name: "Guoqiang Yan"
+secondary_name: "颜国强"
+navbar_name: "Guoqiang Yan"
 
 positions:
-- logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
-  name: Position 1 with logo
-- name: Position 2 without logo
+- logo: /assets/images/badges/SEU_logo.png  # Logo is optional
+  name: Ph.D. Candidate in Public Management, Southeast University
+- name: "Research Focus: Public Policy & Family and Digital Sociology"
 
 
-email: "your@email.com"
-# cv_link: link-to-your-cv-file
-gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID
-github: your_github_id
-twitter: your_twitter_id  # Do not include the '@' symbol
+email: "yangq0827@163.com"
+# cv_link: /assets/files/个人简历.pdf
+gscholar: _yd2-m8AAAAJ
+github: Yan-Guoqiang
+twitter: Guoqiang_yan24
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
 #   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
@@ -22,12 +22,31 @@ twitter: your_twitter_id  # Do not include the '@' symbol
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
+    I am a Ph.D. candidate in Public Management at <a href="https://www.seu.edu.cn/" target="_blank">Southeast University</a>, 
+    supervised by Prof. Cheng Cheng. In my public administration doctoral program, I received both disciplinary training and sociological guidance from my supervisor. This interdisciplinary background has generated two main research threads:
+  </p>
+
+short_bio_collapsed: >-
+  <h6><strong>1. Public Policy Research Track:</strong></h6>
+  <p>
+    My public policy research began with <strong>Free Trade Zone Policy Evaluation</strong>, employing Staggered DID methods for traditional policy impact assessment (supervisor as first author, me as second author and corresponding). Through deep policy evaluation practice, I discovered the gap between policy effectiveness and public perception, prompting me to shift research focus from "whether policies are effective" to "why policies generate controversy".
   </p>
   <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head 
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds, 
-    as well as being common in domestic longhair and domestic shorthair cats.
+    Based on this insight, I conducted <strong>Policy Narrative and Controversy Mechanism Research</strong>: "Why Do Good Policies Cause Controversy? The 'Narrative Gap' in Policy Process," utilizing web scraping and LLM text coding methods (thanks to technical support from <a href="https://www.yanwenwang.com/" target="_blank">Dr. Yanwen Wang</a>), analyzing controversy generation mechanisms from policy narrative perspective (second author and corresponding, Working Paper).
+  </p>
+  <p>
+    Meanwhile, I returned to policy evaluation with expanded focus on complex <strong>Policy Synergy Research</strong>: elderly care policy coordination and inequality in elderly well-being, using dual-policy synergy DID methods to explore multi-policy interaction evaluation (second author, Under Review). This research led me to recognize traditional policy evaluation limitations, thus I committed to <strong>Policy Evaluation Method Innovation</strong>: new pathways for policy effectiveness evaluation through text similarity, attempting to construct new policy evaluation paradigms integrating text analysis with traditional econometric methods (Working Paper).
+  </p>
+  
+  <h6><strong>2. Family and Population Research Track:</strong></h6>
+  <p>
+    My other research track centers on migrant populations, expanding from economic perspectives to sociological theoretical frameworks: starting with <strong>Migrant Population Economic Analysis</strong>, using traditional economic methods to explore migrant economic behavior and family decisions, producing two core published works: one in <em>Applied Economics</em> (ABS2/985 universities Category B journal, first author), another in the renowned family economics journal <em>Review of Economics of the Household</em> (ABS2, sole author).
+  </p>
+  <p>
+    During in-depth research, I gradually found that pure economic analysis cannot fully explain the complexity of family transformation in Chinese contexts. Under my supervisor's guidance, I turned to sociological theory for deeper explanatory frameworks. Inspired by Yan Yunxiang's theory on individualization processes and new familialism in Chinese society, I conducted <strong>Individualization and New Familialism Empirical Research</strong>, re-examining family transformation through sociological theory, with 2 papers currently submitted to <em>China Perspective</em> and <em>Advances in Life Course Research</em> (both under review).
+  </p>
+  <p>
+    Simultaneously, under my supervisor's guidance, I began exploring <strong>Quantitative Research from Relational Sociology Perspective</strong>, attempting to analyze health and risk coping in the individualization era using relational sociology theoretical frameworks (1 under review, 1 working paper).
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
@@ -35,27 +54,27 @@ portrait_caption: >-
   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
-  position: >- 
-    Department of Electrical Engineering and Computer Science <br/>
-    Ph.D. Student
-  date: Sep. 2024 - present
-- name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2019 - Jul. 2021
+- name: Southeast University
+  logo: /assets/images/badges/SEU_logo.png
+  position: "Ph.D. in Public Management"
+  date: Sep. 2024 - Jun. 2028
+- name: Nanjing Audit University
+  logo: /assets/images/badges/NAU_logo.png
+  position: "Master's Degree in Applied Economics"
+  date: Sep. 2021 - Jun. 2024
+- name: Anhui University of Finance and Economics
+  logo: /assets/images/badges/AUFE_logo.webp
+  position: "Bachelor's Degree in Finance with a Minor in Statistics"
+  date: Sep. 2013 - Jun. 2017
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+English Proficiency:
+- name: "IELTS 6.5 (Reading 8.5, Writing 6.0, Speaking 6.0, Listening 5.5)"
+  date: Aug. 2024
+- name: Raleigh International
+  position: "Overseas Volunteer (Malaysia Borneo)"
+  date: Feb - Apr. 2016
+  link: "https://raleighinternational.org/"
 
-awards:
-- name: Award Name 2
-  date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+Projects:
+- name: "Principal Investigator - SEU Innovation Capability Enhancement for Doctoral Students (CXJH_SEU_25238)"
+  description: "SEU Innovation Capability Enhancement Plan for Doctoral Students under Grant Number CXJH_SEU_25238"

@@ -9,10 +9,31 @@
             {%- endif -%}
         </div>
         <div class="col-md-9 col-xl-10 p-3 pl-md-0">
-            <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
+            <!-- Title with language switching -->
+            <div class="publication-title-en">
+                <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
+            </div>
+            <div class="publication-title-zh d-none">
+                <h5 class="mt-0 mb-1 font-weight-normal">{% if item.title_zh %}{{ item.title_zh }}{% else %}{{ item.title }}{% endif %}</h5>
+            </div>
+            
             <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-            <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
-            <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
+            
+            <!-- Journal with language switching -->
+            <div class="publication-journal-en">
+                <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
+            </div>
+            <div class="publication-journal-zh d-none">
+                <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{% if item.pub_zh %}{{ item.pub_zh }}{% else %}{{ item.pub }}{% endif %}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
+            </div>
+            
+            <!-- Abstract with language switching -->
+            <div class="publication-abstract-en">
+                <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
+            </div>
+            <div class="publication-abstract-zh d-none">
+                <p class="mt-0 mb-0 small text-muted">{% if item.abstract_zh %}{{ item.abstract_zh }}{% else %}{{ item.abstract }}{% endif %}</p>
+            </div>
             
             <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
                 {% for link in item.links %}
@@ -33,10 +54,31 @@
         <div class="d-flex align-items-start flex-column py-3 px-4">
             <div class="mb-auto"></div>
             <div>
-                <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
+                <!-- Title with language switching -->
+                <div class="publication-title-en">
+                    <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
+                </div>
+                <div class="publication-title-zh d-none">
+                    <h5 class="mt-0 mb-1 font-weight-normal">{% if item.title_zh %}{{ item.title_zh }}{% else %}{{ item.title }}{% endif %}</h5>
+                </div>
+                
                 <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-                <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
-                <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
+                
+                <!-- Journal with language switching -->
+                <div class="publication-journal-en">
+                    <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
+                </div>
+                <div class="publication-journal-zh d-none">
+                    <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{% if item.pub_zh %}{{ item.pub_zh }}{% else %}{{ item.pub }}{% endif %}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
+                </div>
+                
+                <!-- Abstract with language switching -->
+                <div class="publication-abstract-en">
+                    <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
+                </div>
+                <div class="publication-abstract-zh d-none">
+                    <p class="mt-0 mb-0 small text-muted">{% if item.abstract_zh %}{{ item.abstract_zh }}{% else %}{{ item.abstract }}{% endif %}</p>
+                </div>
                 
                 <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
                     {% for link in item.links %}

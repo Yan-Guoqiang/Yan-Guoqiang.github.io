@@ -8,9 +8,9 @@
                         <!-- When the screen is wider than md, float the portrait on the right -->
                         <div class="figure float-right ml-4 mb-4 d-none d-md-block">
                             <img 
-                                src="{{ site.data.profile.portrait_url | relative_url }}" 
+                                src="{{ site.data.profile.portrait_url | relative_url }}?v={{ site.time | date: '%s' }}" 
                                 class="figure-img img-fluid img-thumbnail" 
-                                style="height: 200px;"
+                                style="height: 200px; width: 150px; object-fit: cover;"
                                 data-toggle="tooltip" 
                                 data-placement="top" 
                                 title="{{ site.data.profile.portrait_caption }}">
@@ -19,17 +19,22 @@
 
                         <div class="d-flex">
                             <div class="h1 font-weight-normal">
-                                {{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small>
+                                <!-- English Version -->
+                                <span class="profile-name-en">{{ site.data.profile.primary_name }}</span>
+                                <!-- Chinese Version -->
+                                <span class="profile-name-zh d-none">{{ site.data.profile_zh.primary_name }}</span>
                             </div>
                             {% if site.data.profile.portrait_url %}
                             <div class="ml-auto d-md-none">
                                 <a target="_blank" href="{{ site.data.profile.portrait_url | relative_url }}">
-                                    <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle" style="height: 48px;" alt="Portrait">
+                                    <img src="{{ site.data.profile.portrait_url | relative_url }}?v={{ site.time | date: '%s' }}" class="rounded-circle" style="height: 48px; width: 48px; object-fit: cover;" alt="Portrait">
                                 </a>
                             </div>
                             {% endif %}
                         </div>
-                        <div class="text-profile-position">
+                        
+                        <!-- English Positions -->
+                        <div class="text-profile-position profile-position-en">
                             {% for position in site.data.profile.positions %}
                             {% if position.logo -%}
                             <img src="{{ position.logo | relative_url }}" alt="Logo" class="inline-badge"/>
@@ -37,11 +42,63 @@
                             {{ position.name }}<br/>
                             {% endfor %}
                         </div>
-                        <div class="text-profile-bio mt-3" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
-                            {{ site.data.profile.short_bio }}
+                        
+                        <!-- Chinese Positions -->
+                        <div class="text-profile-position profile-position-zh d-none">
+                            {% for position in site.data.profile_zh.positions %}
+                            {% if position.logo -%}
+                            <img src="{{ position.logo | relative_url }}" alt="Logo" class="inline-badge"/>
+                            {%- endif %}
+                            {{ position.name }}<br/>
+                            {% endfor %}
                         </div>
+                        
+                        <!-- English Bio -->
+                        <div class="text-profile-bio mt-3 profile-bio-en" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
+                            <p>
+                                My academic background is characterized by distinctive interdisciplinary features. During my master's degree, I primarily engaged in family economics research based on migrant populations. In my doctoral stage, I study under <a href="https://rwxy.seu.edu.cn/2020/1109/c8792a352638/page.htm" target="_blank">Prof. Cheng Cheng</a>, a sociologist at Southeast University. In my public administration doctoral program, I received both disciplinary training and sociological guidance from my supervisor. This interdisciplinary background has generated two main research threads:
+                            </p>
+                            {% if site.data.profile.short_bio_collapsed %}
+                            <div class="research-tracks-toggle-en mt-3">
+                                <button type="button" class="btn btn-outline-primary btn-sm" onclick="toggleResearchTracksEn()">
+                                    <i class="fas fa-chevron-down" id="toggle-icon-en"></i> <span data-i18n="profile.expand_research">Expand Research Details</span>
+                                </button>
+                            </div>
+                            <div id="research-tracks-en" class="mt-3" style="display: none;">
+                                {{ site.data.profile.short_bio_collapsed }}
+                            </div>
+                            {% endif %}
+                        </div>
+                        
+                        <!-- Chinese Bio -->
+                        <div class="text-profile-bio mt-3 profile-bio-zh d-none" {% if site.data.profile_zh.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
+                            <p>
+                                我的学术背景具有鲜明的跨学科特色。硕士阶段主要从事基于流动人口的家庭经济学研究；博士阶段师从东南大学社会学<a href="https://rwxy.seu.edu.cn/2020/1109/c8792a352638/page.htm" target="_blank">程诚教授</a>。在公共管理学博士培养中，我同时接受了本学科课程训练和导师的社会学学术指导。这种跨学科背景使我呈现出两条主要的研究脉络：
+                            </p>
+                            {% if site.data.profile_zh.short_bio_collapsed %}
+                            <div class="research-tracks-toggle-zh mt-3">
+                                <button type="button" class="btn btn-outline-primary btn-sm" onclick="toggleResearchTracksZh()">
+                                    <i class="fas fa-chevron-down" id="toggle-icon-zh"></i> 展开研究详情
+                                </button>
+                            </div>
+                            <div id="research-tracks-zh" class="mt-3" style="display: none;">
+                                {{ site.data.profile_zh.short_bio_collapsed }}
+                            </div>
+                            {% endif %}
+                        </div>
+                        
+                        <!-- CV Link - English -->
                         {% if site.data.profile.cv_link %}
-                            <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
+                            <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}" class="cv-link-en">
+                                <i class="fas fa-file-alt"></i> <span data-i18n="profile.download_cv">Curriculum Vitae</span>
+                            </a><br/>
+                        {% endif %}
+                        
+                        <!-- CV Link - Chinese -->
+                        {% if site.data.profile_zh.cv_link %}
+                            <a target="_blank" href="{{ site.data.profile_zh.cv_link | relative_url }}" class="cv-link-zh d-none">
+                                <i class="fas fa-file-alt"></i> <span data-i18n="profile.download_cv">下载简历</span>
+                            </a><br/>
                         {% endif %}
                     </div>
         
@@ -50,7 +107,7 @@
                 <div class="row">
                     <div class="col">
                         <a class="pr-3 no-break" href="mailto:{{ site.data.profile.email | encode_email }}">
-                            <i class="fas fa-at"></i> <span class="email-text">{{ site.data.profile.email | replace: "@", "(at)" }}</span>
+                            <i class="fas fa-at"></i> <span class="email-text">{{ site.data.profile.email }}</span>
                         </a>
 
                         {% if site.data.profile.gscholar %}
@@ -119,3 +176,38 @@
     </div>
 </div>
 {% endif %}
+
+<script>
+function toggleResearchTracksEn() {
+    const content = document.getElementById('research-tracks-en');
+    const icon = document.getElementById('toggle-icon-en');
+    const button = document.querySelector('.research-tracks-toggle-en button');
+    const expandText = button.querySelector('span[data-i18n="profile.expand_research"]');
+    
+    if (content.style.display === 'none') {
+        content.style.display = 'block';
+        icon.className = 'fas fa-chevron-up';
+        expandText.textContent = 'Collapse Research Details';
+    } else {
+        content.style.display = 'none';
+        icon.className = 'fas fa-chevron-down';
+        expandText.textContent = 'Expand Research Details';
+    }
+}
+
+function toggleResearchTracksZh() {
+    const content = document.getElementById('research-tracks-zh');
+    const icon = document.getElementById('toggle-icon-zh');
+    const button = document.querySelector('.research-tracks-toggle-zh button');
+    
+    if (content.style.display === 'none') {
+        content.style.display = 'block';
+        icon.className = 'fas fa-chevron-up';
+        button.innerHTML = '<i class="fas fa-chevron-up" id="toggle-icon-zh"></i> 收起研究详情';
+    } else {
+        content.style.display = 'none';
+        icon.className = 'fas fa-chevron-down';
+        button.innerHTML = '<i class="fas fa-chevron-down" id="toggle-icon-zh"></i> 展开研究详情';
+    }
+}
+</script>

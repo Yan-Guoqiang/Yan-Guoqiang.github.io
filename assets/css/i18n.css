@@ -1,0 +1,94 @@
+/* 多语言切换CSS样式 */
+
+/* 默认显示英文，隐藏中文 */
+body[data-lang="en"] .profile-name-zh,
+body[data-lang="en"] .profile-position-zh,
+body[data-lang="en"] .profile-bio-zh,
+body[data-lang="en"] .cv-link-zh,
+body[data-lang="en"] .education-zh,
+body[data-lang="en"] .experience-zh,
+body[data-lang="en"] .awards-zh,
+body[data-lang="en"] .under-review-zh,
+body[data-lang="en"] .academic-services-zh,
+body[data-lang="en"] .news-card-zh,
+body[data-lang="en"] .under-review-card-zh,
+body[data-lang="en"] .publication-card-zh,
+body[data-lang="en"] .publication-title-zh,
+body[data-lang="en"] .publication-journal-zh,
+body[data-lang="en"] .publication-abstract-zh {
+    display: none !important;
+}
+
+body[data-lang="en"] .profile-name-en,
+body[data-lang="en"] .profile-position-en,
+body[data-lang="en"] .profile-bio-en,
+body[data-lang="en"] .cv-link-en,
+body[data-lang="en"] .education-en,
+body[data-lang="en"] .experience-en,
+body[data-lang="en"] .awards-en,
+body[data-lang="en"] .under-review-en,
+body[data-lang="en"] .academic-services-en,
+body[data-lang="en"] .news-card-en,
+body[data-lang="en"] .under-review-card-en,
+body[data-lang="en"] .publication-card-en,
+body[data-lang="en"] .publication-title-en,
+body[data-lang="en"] .publication-journal-en,
+body[data-lang="en"] .publication-abstract-en {
+    display: block !important;
+}
+
+/* 中文模式：显示中文，隐藏英文 */
+body[data-lang="zh"] .profile-name-en,
+body[data-lang="zh"] .profile-position-en,
+body[data-lang="zh"] .profile-bio-en,
+body[data-lang="zh"] .cv-link-en,
+body[data-lang="zh"] .education-en,
+body[data-lang="zh"] .experience-en,
+body[data-lang="zh"] .awards-en,
+body[data-lang="zh"] .under-review-en,
+body[data-lang="zh"] .academic-services-en,
+body[data-lang="zh"] .news-card-en,
+body[data-lang="zh"] .under-review-card-en,
+body[data-lang="zh"] .publication-card-en,
+body[data-lang="zh"] .publication-title-en,
+body[data-lang="zh"] .publication-journal-en,
+body[data-lang="zh"] .publication-abstract-en {
+    display: none !important;
+}
+
+body[data-lang="zh"] .profile-name-zh,
+body[data-lang="zh"] .profile-position-zh,
+body[data-lang="zh"] .profile-bio-zh,
+body[data-lang="zh"] .cv-link-zh,
+body[data-lang="zh"] .education-zh,
+body[data-lang="zh"] .experience-zh,
+body[data-lang="zh"] .awards-zh,
+body[data-lang="zh"] .under-review-zh,
+body[data-lang="zh"] .academic-services-zh,
+body[data-lang="zh"] .news-card-zh,
+body[data-lang="zh"] .under-review-card-zh,
+body[data-lang="zh"] .publication-card-zh,
+body[data-lang="zh"] .publication-title-zh,
+body[data-lang="zh"] .publication-journal-zh,
+body[data-lang="zh"] .publication-abstract-zh {
+    display: block !important;
+}
+
+/* 语言切换按钮样式 */
+#language-toggle {
+    transition: all 0.3s ease;
+}
+
+#language-toggle:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    #language-toggle {
+        margin-top: 0.5rem;
+        margin-left: 0 !important;
+    }
+}
+

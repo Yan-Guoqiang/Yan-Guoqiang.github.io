@@ -53,6 +53,10 @@ h1, h2, h3, h4, h5, h6,
     line-break: unset;
 }
 
+.border-left-primary {
+    border-left: 4px solid #007bff !important;
+}
+
 .no-break {
     white-space: nowrap;
 }
@@ -88,5 +92,74 @@ div.lazy {
 
 .email-text {
     font-family: Courier, monospace;
+}
+
+/* Research Tracks Toggle Button Styles */
+.research-tracks-toggle-en, .research-tracks-toggle-zh {
+    margin: 1rem 0;
+    padding-top: 0.5rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.research-tracks-toggle-en button, .research-tracks-toggle-zh button {
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    padding: 0.375rem 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.research-tracks-toggle-en button:hover, .research-tracks-toggle-zh button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,123,255,0.2);
+}
+
+#research-tracks-en, #research-tracks-zh {
+    border-left: 3px solid #007bff;
+    padding-left: 1rem;
+    margin-left: 0.5rem;
+}
+
+/* Language-specific section visibility */
+/* Default: English version visible */
+.english-proficiency-section-en,
+.projects-section-en {
+    display: block;
+}
+
+.english-proficiency-section-zh,
+.projects-section-zh {
+    display: none;
+}
+
+/* When Chinese is selected: hide English, show Chinese */
+[data-lang="zh"] .english-proficiency-section-en,
+[data-lang="zh"] .projects-section-en {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+[data-lang="zh"] .english-proficiency-section-zh,
+[data-lang="zh"] .projects-section-zh {
+    display: block !important;
+}
+
+/* When English is selected: show English, hide Chinese */
+[data-lang="en"] .english-proficiency-section-en,
+[data-lang="en"] .projects-section-en {
+    display: block !important;
+}
+
+[data-lang="en"] .english-proficiency-section-zh,
+[data-lang="en"] .projects-section-zh {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
