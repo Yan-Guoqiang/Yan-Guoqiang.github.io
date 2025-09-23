@@ -17,6 +17,6 @@ authors:
   - Guoqiang Yan
 links: 
   Paper: https://kns.cnki.net/kcms2/article/abstract?v=d7HKHDfP4kcgmQ0m0Mxu0PuOJBovdQbCY3Mj4tXrRyF_Iwd16JGjrWY9IAwbZvlwXEnb5GSq_o0otMgfhellnbakyIY9o9vkfzUfzRUm0-dxuTQDfya38dsJfipGgbEjO-58o7G2eKlBbLwKDcJMrihAweBTSndn9jFVqhc6vugxHmZQPdICdw==&uniplatform=NZKPT&language=CHS
-  PDF: /assets/files/papers/2023-free-trade-zone-corporate-finance.pdf
+  PDF: assets/files/papers/2023-free-trade-zone-corporate-finance.pdf
 ---
 
