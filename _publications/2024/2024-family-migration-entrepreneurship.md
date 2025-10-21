@@ -11,6 +11,7 @@ cover:          /assets/images/covers/paper3-cover.jpeg
 authors:
   - Guoqiang Yan
 links:
-  Paper: /assets/files/papers/2024-family-migration-entrepreneurship.pdf
+  Paper: https://link.springer.com/article/10.1007/s11150-025-09807-z
+  PDF: /assets/files/papers/2024-family-migration-entrepreneurship.pdf
   Response: /assets/files/papers/2025-family_migration_response.pdf
 ---
