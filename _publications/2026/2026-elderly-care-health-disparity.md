@@ -2,7 +2,7 @@
 title:          "Can Dual-Pilot Elderly Care Service Policies Alleviate Health Disparities Among the Elderly?"
 title_zh:       "养老服务政策双试点能否缓解老年人健康差距?"
 date:           2026-04-01
-selected:       false
+selected:       true
 pub:            "Finance and Trade Research"
 pub_zh:         "财贸研究"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Published</span> <span class="badge badge-pill badge-publication badge-info">CSSCI</span>'
