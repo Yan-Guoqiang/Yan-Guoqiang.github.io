@@ -7,7 +7,7 @@ pub_last:       ' <span class="badge badge-pill badge-publication badge-success"
 pub_date:       "2026"
 abstract: >-
   This paper advances the "individual turn" in the Narrative Policy Framework (NPF) through social media research, examining how narrative characteristics relate to digital engagement in the context of China's National Centralized Drug Procurement policy.
-cover:
+cover:          /assets/images/covers/npf-frame-type-distribution.png
 authors:
   - Tao Wu
   - Guoqiang Yan*
