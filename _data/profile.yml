@@ -5,7 +5,7 @@ navbar_name: "Guoqiang Yan"
 positions:
 - logo: /assets/images/badges/SEU_logo.png  # Logo is optional
   name: Ph.D. Candidate in Public Management, Southeast University
-- name: "Research Focus: Public Policy & Family and Digital Sociology"
+- name: "Research Focus: Public Policy Processes, Policy Narratives, Digital Government, Migration, Family Sociology"
 
 
 email: "yangq0827@163.com"
@@ -58,14 +58,14 @@ education:
   logo: /assets/images/badges/SEU_logo.png
   position: "Ph.D. in Public Management"
   date: Sep. 2024 - Jun. 2028
+- name: National University of Singapore
+  logo: /assets/images/badges/NUS_logo.png
+  position: "Visiting Researcher, Dept. of Sociology & Anthropology / Centre for Family and Population Research"
+  date: Aug. 2026 - Feb. 2027
 - name: Nanjing Audit University
   logo: /assets/images/badges/NAU_logo.png
   position: "Master's Degree in Applied Economics"
   date: Sep. 2021 - Jun. 2024
-- name: Anhui University of Finance and Economics
-  logo: /assets/images/badges/AUFE_logo.webp
-  position: "Bachelor's Degree in Finance with a Minor in Statistics"
-  date: Sep. 2013 - Jun. 2017
 
 English Proficiency:
 - name: "IELTS 6.5 (Reading 8.5, Writing 6.0, Speaking 6.0, Listening 5.5)"

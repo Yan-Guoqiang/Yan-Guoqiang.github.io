@@ -5,7 +5,7 @@ navbar_name: "颜国强"
 positions:
 - logo: /assets/images/badges/SEU_logo.png
   name: 东南大学人文学院公共管理学博士研究生
-- name: 研究方向：公共政策、家庭社会学
+- name: 研究方向：公共政策过程、政策叙事、数字政府、流动人口、家庭社会学
 
 email: "yangq0827@163.com"
 ## cv_link: /assets/files/中文版+简历.pdf
@@ -48,14 +48,14 @@ education:
   logo: /assets/images/badges/SEU_logo.png
   position: "公共管理学博士"
   date: 2024年9月 - 2028年6月
+- name: 新加坡国立大学
+  logo: /assets/images/badges/NUS_logo.png
+  position: "联合培养博士生，社会学与人类学系 / 家庭与人口研究中心"
+  date: 2026年8月 - 2027年2月
 - name: 南京审计大学
   logo: /assets/images/badges/NAU_logo.png
   position: "应用经济学硕士"
   date: 2021年9月 - 2024年6月
-- name: 安徽财经大学
-  logo: /assets/images/badges/AUFE_logo.webp
-  position: "金融学学士（辅修统计学）"
-  date: 2013年9月 - 2017年6月
 
 英语能力:
 - name: "雅思6.5分（阅读8.5，写作6.0，口语6.0，听力5.5）"
