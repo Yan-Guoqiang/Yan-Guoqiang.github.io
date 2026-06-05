@@ -9,11 +9,17 @@ pub_last:       ' <span class="badge badge-pill badge-publication badge-success"
 pub_date:       "2026"
 abstract: >-
   This paper examines whether dual-pilot elderly care service policies can alleviate health disparities among the elderly in China.
+abstract_zh: >-
+  本文考察养老服务政策双试点能否缓解老年人健康差距。
 cover:          /assets/images/covers/elderly-care-dual-pilot.png
 authors:
   - Kun Xu
   - Guoqiang Yan
   - Hanhui Deng
+authors_zh:
+  - 许昆
+  - 颜国强
+  - 邓汉慧
 links:
   Paper: https://doi.org/10.19337/j.cnki.34-1093/f.2026.04.006
 ---
