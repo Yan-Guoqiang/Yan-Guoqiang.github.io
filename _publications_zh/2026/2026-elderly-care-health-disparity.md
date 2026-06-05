@@ -7,7 +7,7 @@ pub_last:       ' <span class="badge badge-pill badge-publication badge-success"
 pub_date:       "2026"
 abstract: >-
   本文考察养老服务政策双试点能否缓解老年人健康差距。
-cover:
+cover:          /assets/images/covers/elderly-care-dual-pilot.png
 authors:
   - 许昆
   - 颜国强
